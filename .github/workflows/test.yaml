@@ -14,3 +14,4 @@ jobs:
       - run: mtr -r api.snapcraft.io
       - run: ls -l /var/lib/snapd/snaps
       - run: sudo snap known serial
+      - run: echo "Are we all clones?"
