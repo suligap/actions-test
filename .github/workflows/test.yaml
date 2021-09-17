@@ -13,7 +13,7 @@ jobs:
       - run: uname -a
       - run: ls -l /var/lib/snapd/snaps
       - run: sudo snap known serial
-      - run: echo "Are we all clones? We sure are still. Again. Yep. Hrmph."
+      - run: echo "Are we all clones? We sure are still. Again. Yep. Hrmph. But, like, why?"
       - run: cat /proc/mounts
       - run: sudo lshw
       - run: echo "SNAPPY_TESTING=1" | sudo tee -a /etc/environment
