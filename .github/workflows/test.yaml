@@ -16,3 +16,8 @@ jobs:
       - run: echo "Are we all clones?"
       - run: cat /proc/mounts
       - run: sudo lshw
+      - run: echo "SNAPPY_TESTING=1" > sudo tee -a /etc/environment
+      - run: sudo systemctl restart snapd
+      - run: sudo snap refresh
+      - run: sudo snap changes
+      - run: sudo snap tasks --last=refresh
