@@ -11,7 +11,6 @@ jobs:
       - run: uptime
       - run: sudo snap find this-is-wgrant-from-github
       - run: uname -a
-      - run: mtr -r api.snapcraft.io
       - run: ls -l /var/lib/snapd/snaps
       - run: sudo snap known serial
       - run: echo "Are we all clones?"
