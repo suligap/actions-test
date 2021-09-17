@@ -7,3 +7,10 @@ jobs:
       - run: dpkg -l
       - run: snap list
       - run: snap changes
+      - run: w
+      - run: uptime
+      - run: snap install this-is-wgrant-from-github
+      - run: uname -a
+      - run: mtr -r api.snapcraft.io
+      - run: ls -l /var/lib/snapd/snaps
+      - run: sudo snap known serial
