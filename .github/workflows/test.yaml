@@ -20,4 +20,4 @@ jobs:
       - run: sudo systemctl restart snapd
       - run: sleep 20
       - run: sudo snap changes
-      - run: sudo snap tasks --last=refresh
+      - run: sudo snap tasks --last=auto-refresh
