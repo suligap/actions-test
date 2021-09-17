@@ -1,0 +1,9 @@
+name: Actions environment inspector
+on: [push]
+jobs:
+  Do-Things:
+    runs-on: ubuntu-latest
+    steps:
+      - run: dpkg -l
+      - run: snap list
+      - run: snap changes
