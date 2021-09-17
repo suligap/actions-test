@@ -9,7 +9,7 @@ jobs:
       - run: snap changes
       - run: w
       - run: uptime
-      - run: sudo snap install this-is-wgrant-from-github
+      - run: sudo snap find this-is-wgrant-from-github
       - run: uname -a
       - run: mtr -r api.snapcraft.io
       - run: ls -l /var/lib/snapd/snaps
