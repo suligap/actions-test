@@ -21,3 +21,4 @@ jobs:
       - run: sleep 20
       - run: sudo snap changes
       - run: sudo snap tasks --last=auto-refresh
+      - run: sudo ls -l /var/lib/snapd/assertions/asserts-v0/serial/generic/generic-classic/
