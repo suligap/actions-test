@@ -15,3 +15,5 @@ jobs:
       - run: ls -l /var/lib/snapd/snaps
       - run: sudo snap known serial
       - run: echo "Are we all clones?"
+      - run: cat /proc/mounts
+      - run: sudo lshw
