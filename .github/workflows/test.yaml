@@ -4,7 +4,7 @@ jobs:
   Do-Things:
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 10
+      - run: sleep 120
       - run: dpkg -l
       - run: snap list
       - run: snap changes
