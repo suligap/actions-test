@@ -13,7 +13,7 @@ jobs:
       - run: sudo snap install wgrant-test --beta
       - run: sudo snap refresh
       - run: uname -a
-      - run: ls -l /var/lib/snapd/snaps
+      - run: ls -l /var/lib/snapd/snaps/
       - run: sudo snap known serial
       - run: sudo snap tasks --last=auto-refresh
       - run: snap changes
