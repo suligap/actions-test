@@ -12,7 +12,9 @@ jobs:
       - run: uptime
       - run: sudo snap find who-you-gonna-call--cachebusters
       - run: sudo snap install wgrant-test --beta
-      - run: sudo snap refresh
+      - run: sudo snap refresh core20 || true
+      - run: sudo snap refresh snapd || true
+      - run: sudo snap refresh lxd || true
       - run: uname -a
       - run: ls -l /var/lib/snapd/snaps/
       - run: sudo snap known serial
