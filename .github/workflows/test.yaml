@@ -15,5 +15,5 @@ jobs:
       - run: uname -a
       - run: ls -l /var/lib/snapd/snaps/
       - run: sudo snap known serial
-      - run: sudo snap tasks --last=auto-refresh
+      - run: sudo snap tasks --last=auto-refresh || true
       - run: snap changes
