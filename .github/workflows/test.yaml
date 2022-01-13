@@ -20,3 +20,5 @@ jobs:
       - run: sudo snap known serial
       - run: sudo snap tasks --last=auto-refresh || true
       - run: snap changes
+      - run: sleep 20
+      - run: sudo jq . /var/lib/snapd/state.json
