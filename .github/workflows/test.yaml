@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: dpkg -l
+      - run: sudo snap refresh --time
       - run: sudo snap get system refresh
       - run: ls -l /var/lib/snapd/snaps/
       - run: snap list
